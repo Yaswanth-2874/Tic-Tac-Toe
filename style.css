@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav{
+    background-color: rgb(11, 0, 53);
+    color: gray;
+    height: 50px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.Box{
+    position: relative;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.Inside{
+    display: grid;
+    grid-template-columns: repeat(3,5vw);
+    grid-template-rows: repeat(3,5vw);
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    top: 13vw;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 4vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: aquamarine;
+}
+
+.gameInfo{
+    padding: 30px;
+    font-family: 'PT Sans', sans-serif;
+   
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 0px;
+    padding: 8px;
+    background:aquamarine;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    
+    transition: width 1s ease-in-out;
+}
+
+button#reset {
+    top: 36vw;
+    left: 52vw;    
+}
+
+#resetscore{
+    margin: 0px;
+    padding: 8px;
+    background:aquamarine;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    top: 36vw;
+    left: 44vw;    
+}
+
+@media screen and (max-width: 800px)
+{
+    .Box{
+        flex-wrap: wrap;
+    }
+    
+    /* .box{
+        
+        grid-template-columns: repeat(3,5vw);
+        grid-template-rows: repeat(3,5vw);
+        width: 100%;
+        max-width: 400px;
+        margin: 50vw auto;
+        
+    } */
+}
